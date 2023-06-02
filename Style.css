@@ -1,0 +1,158 @@
+*{
+    background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+html{
+    background-image: url("Imagenes/Fondo\ Matrix.jpg");
+    background-size: 100%;
+}
+
+main{
+    display: flex;
+}
+.logo{
+    background-color: rgb(0, 0, 0, 0);
+    position: absolute;
+    top: 2%;
+    width: 8%;
+}
+
+.textarea-info{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    bottom: 150px;
+    margin-left: 8%;
+    width: 55%;
+    min-width: 648px;
+    height: 80%;
+}
+
+.textarea-inicial{
+    padding-top: 1%;
+    padding-left: 2%;
+    height: 100%;
+    resize: none;
+    border-width: 1px;
+    color: #2db44f;
+    font-weight: bold;
+    text-transform: lowercase;    
+}
+
+::placeholder{ color: #638068;}
+    .textarea-inicial:focus{
+        outline: none
+    }
+
+
+.informacion{
+    color: #c0c0c0;
+    font-size: 18px;
+    margin: -28px 1px -1px 9px;
+}
+
+.botones{
+    z-index: 4;
+    display: flex;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0);
+    bottom: 35px;
+    left: 8.5%;
+    padding: 8px 0px 40px 0px;
+}
+
+.btn-encriptar{
+    background-color: #638068;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 24px;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-right: 3%;
+}
+
+.btn-desencriptar{
+    background-color: rgba(68, 68, 68, 0.8);
+    border: 1px solid #b2e0bf;
+    border-radius: 24px;
+    color: #b2e0bf;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.textarea-final{
+    z-index: 1;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: absolute;
+    top: 1%;
+    bottom: 2%;
+    right: 4%;
+    resize: none;
+    height: 96%;     
+    width: 30%;  
+    min-width: 350px;
+    background: rgb(0, 0, 0, 0.7);
+    background-image: url("Imagenes/Lupa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    border: solid;
+    border-color: #797979;
+    border-width: 3px;
+    border-radius: 24px;
+    color:#c1d6c4
+}
+.textarea-final:focus {
+    outline: none;
+}
+
+.btn-copiar{
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 2;
+    position: absolute;
+    bottom: 40px;
+    right: 5%;
+    border: 1px solid #b2e0bf;
+    border-radius: 24px;
+    color: #b2e0bf;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+footer p{
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: rgba(71, 121, 71, 0.7);
+  border-color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  left: 8.5%;
+  width: 650px;
+}
+
+.logo-linkedin{
+    background-color: rgb(0, 0, 0, 0);
+    position: absolute;
+    left: calc(8.5% + 670px);
+    bottom: 20px;
+    width: 40px;
+}
+
+.logo-github{
+    background-color: rgb(0, 0, 0, 0);
+    position: absolute;
+    left: calc(8.5% + 720px);
+    bottom: 20px;
+    width: 40px;
+}

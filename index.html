@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>        
+    <link rel="stylesheet" href="Style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/logo-alura.png" alt="Logo Alura">
+    </header>
+    <main>
+        <section class="seccion-izquierda">
+            <div class="textarea-info">
+                <textarea class="textarea-inicial" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <p class="informacion"><img src="Imagenes/bi_exclamation-circle-fill.png" alt="Información importante"> Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section> 
+        <section class="seccion-derecha">
+            <textarea class="textarea-final" cols="20" rows="10"></textarea>
+            <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        </section>     
+    </main>
+
+    <footer>
+        <p>© 2023 - Gomez Alberto Manuel</p>
+        <a href="https://www.linkedin.com/in/AlbertoManuelGomez"><img class="logo-linkedin" src="Imagenes/logo-linkedin.png" alt="logo Linkedin"></a>
+        <a href="https://github.com/GomezAlbertoManuel"><img class="logo-github" src="Imagenes/logo-github.png" alt="Logo Github"></a>
+
+
+    </footer>
+
+<script>
+    //Tuve que añadir una función que ajusta el zoom de la página (con ayuda externa)
+    //para poder conservar el estilo que deseaba, 
+    //ya que se me complicaba mucho mantener las relaciones de tamaño con CSS.
+    
+    function ajustarZoom() {
+        var anchoPagina = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var porcentajeZoom = (anchoPagina / 1400) * 100;
+
+        if (anchoPagina < 1400) {
+            document.body.style.zoom = porcentajeZoom + "%";
+        } else {
+            document.body.style.zoom = "100%";
+        }
+        }
+
+        // Llama a la función cuando se carga la página y cuando se redimensiona la ventana
+        window.addEventListener("load", ajustarZoom);
+        window.addEventListener("resize", ajustarZoom);
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
